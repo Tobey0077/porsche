@@ -1,0 +1,545 @@
+@charset "utf-8";
+/* CSS Document */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+html {scroll-behavior: smooth;}
+@font-face {
+    font-family: 'MojePismo'; 
+    src: url( "fonts/911porschav3.ttf"),
+}
+@font-face {
+	font-family: 'MojePismo2';
+	src: url("fonts/l_10646.ttf")
+}
+@font-face {
+	font-family: 'MojePismo3';
+	src: url("fonts/calibril.ttf")
+}
+@font-face {
+	font-family: 'MojePismo4';
+	src: url("fonts/AlegreyaSansSC-Thin.ttf")
+}
+body {min-width: 350px;background-color: #000000;}
+#wrapper {
+  max-width: 1300px;
+  margin: 0 auto;min-width: 350px;
+}
+header {width: 100%;height: auto;background-color: #000000;display: flex;max-width: 1366px}
+.logo1 {
+    max-width: 40%;
+	min-width: 30%;
+	height: auto;
+	margin-left: 16%
+	
+}
+.logotext {font-family:'MojePismo';
+color: white;font-size: 1rem;
+font-size: clamp(1rem, 0.725rem + 1.4666666666666668vw, 2.1rem);	margin-left: 4%}
+
+nav { width: clamp(400px,180vw , 1366px);display: flex;align-items: center;}
+ul {width: 100%;display: flex;align-items: center;justify-content: space-around;gap: 33px;
+  list-style-type: none;
+	overflow: hidden;}
+li {display: inline-block;gap: 20px}
+a {
+  text-decoration: none;
+	color: white;font-size: clamp(16px, 1.7vw, 32px);}
+.prihlasitsa {width: 100%;height: auto;display: flex;align-items: center;max-width: 1366px;transform: translateX(clamp(80px, 12vw, 280px));gap:8px;}
+
+.hero-image{max-width: 1366px;height: auto;width: 100%;}
+.userikon {;height:auto;width: clamp(7%, 8%, 10%)}
+.prihlasitsatext {font-size: clamp(12px, 1.5vw, 30px);}
+.prvasekcia #kok {font-family: 'MojePismo2';color: white;display: flex;justify-content: center; font-size: clamp(10px, 2vw, 52px);font-weight: 600;position: absolute;bottom: 60px}
+
+
+@media (max-width: 760px) {
+	header {flex-direction: column;align-items: center;justify-content: center;height: auto}
+	.logo1 {max-width: 100px;margin-left: 18%}
+	.logotext {font-size: clamp(1rem, 0.725rem + 1.4666666666666668vw, 2.1rem);	margin-left: 3%;}
+	nav {flex-direction: column;align-items: center;justify-content: center;display: flex;
+	 width: clamp(200px,100vw , 1366px);margin-top: 30px}
+	.prihlasitsa {margin-top: 20px;text-align: center;transform: translateX(clamp(90px, 41vw, 480px)) }
+	.userikon {width:clamp(26px, 1.5vw, 25px)}
+	.prihlasitsatext {font-size: clamp(10px, 1.5vw, 30px)}
+	#kok {position: absolute;margin-top: 60px}
+	h2 {font-size:clamp(0.8rem, 2vw, 2rem)}
+	h4 {font-size:clamp(0.8rem, 1.9vw, 1.8rem) }
+	.onastext {;font-size:clamp(5px, 1.vw, 10px);max-width: 600px;width: 80%}
+	.hlavicka {margin-top: 20px}
+	.kdenash2 {margin-top: 5px}
+	.logo-blok .galeria {font-size: 4rem}
+	.clen {width: 70%; max-width: 200px;}
+	
+}
+
+.about {
+  max-width: 1300px;
+  min-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h2 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+ margin-top: 0.8rem;color:  white
+}
+
+.about-text h3 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  color: #DFDFDF;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+ 
+}
+.about-image {
+  position: relative;
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;height: auto
+}
+
+.image-background {
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;max-height: 180px;
+  background-color: #E8E8E8;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0,  0.3);
+  z-index: 1;
+}
+h2 {font-family:'MojePismo2';position: relative;left: 30px;bottom: 20px;color: white}
+h4 {font-family:'MojePismo2';position: relative;left: 30px;bottom: 10px;color: white}
+.onastext {color: white;font-family:'MojePismo2';position: relative;left: 30px;text-align: justify;width: 90%;
+  ;font-size:clamp(5px, 1vw, 10px)}
+.hlavicka {
+  background-color: #242527;
+  color: white;
+  max-width: 1300px;
+  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.horny-blok {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-blok {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;align-items: center
+}
+
+.porsche {
+  font-size: 2.6rem;
+  margin: 0;
+  font-family: 'MojePismo';
+}
+
+.galeria {
+  font-size: 4.8rem;
+  margin: 10px 0 0 0;
+  font-weight: lighter;font-family: 'MojePismo3';letter-spacing:0.4rem
+}
+
+.horne-fotky {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.spodne-fotky {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.hlavicka img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* RESPONSÍVNE */
+@media (max-width: 760px) {
+  .horny-blok {
+    flex-direction: column;
+  }
+
+  .horne-fotky,
+  .spodne-fotky {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-blok {
+    align-items: center;
+  }
+}
+
+.sekcia-kontakt {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 0;
+}
+
+.kontakt-box {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kontakt-box .kontakttext,
+.mapa-box .kdenash2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;font-family:'MojePismo2';font-weight: bold;color: black
+}
+
+.kontakt-box input,
+.kontakt-box textarea {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.kontakt-box textarea {
+  height: 100px;
+}
+
+.kontakt-box button {
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+}
+
+.tabulka {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabulka .trr { border: 2px solid #000;}
+.tabulka th, .tabulka td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.mapa-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapa-box iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.tim {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.timp {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+	font-family: 'MojePismo2';
+}
+
+.clenovia {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.clen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.clen img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.clen strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.autor {
+  margin-top: 40px;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.predajca {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* RESPONSÍVNE */
+@media (max-width: 760px) {
+  .clenovia {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .clen {
+    max-width: 80%;
+  }
+}
+strong {font-family: 'MojePismo2';}
+.predajca{font-family:'MojePismo4';font-weight: 700}
+
+@media (max-width: 760px) {
+  #galeria {
+    grid-template-columns: 1fr;
+  }
+  .sekcia-kontakt {
+    flex-direction: column;
+  }
+  .kontakt-box, .mapa-box {
+    width: 100%;
+  }
+  .clenovia {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+/* 1. Efekt keyframes na text v sekcii O nás */
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-text {
+  animation: fadeInMove 2s ease-in-out forwards;
+}
+
+
+
+.hero-image {
+  animation: zoomIn 8s ease-in-out infinite alternate;
+}
+
+/* Efekt hover na obrázkoch v galérii */
+.hlavicka img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  box-shadow: -2px 6px 27px 0px rgba(29,56,252,0.56);
+-webkit-box-shadow: -2px 6px 27px 0px rgba(29,56,252,0.56);
+-moz-box-shadow: -2px 6px 27px 0px rgba(29,56,252,0.56);
+}
+
+/* Hover efekt na navigačných odkazoch */
+nav a:hover {
+  color: #001EFF; /* napríklad červená */
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* :focus efekt na formulári */
+.kontakt-box input:focus,
+.kontakt-box textarea:focus {
+  outline: 3px solid #004BFF;
+  background-color: #CCCCCC;
+  transition: 0.3s;
+}
+.clen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  perspective: 1000px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.clen img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.clen:hover::before {
+  opacity: 1;
+  animation: shine 1s forwards;
+}
+
+/* Pri hoveri rotácia a efekt */
+.clen:hover img {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4);
+}
+
+/* Animácia svetla */
+@keyframes shine {
+  0% {
+    transform: rotate(25deg) translate(-100%, -100%);
+  }
+  100% {
+    transform: rotate(25deg) translate(100%, 100%);
+  }
+}
+.prvasekcia {
+    width: 100%;
+    max-width: 1300px;
+    min-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prvasekcia h1 {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'MojePismo2';
+    font-size: clamp(16px, 1.7vw, 30px);
+    padding: 0 10px;
+}
+
+/* Šípky */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+/* Responzívne */
+@media (max-width: 760px) {
+    .prvasekcia {
+        padding: 10px 5px;
+    }
+
+    .prvasekcia h1 {
+        font-size: clamp(14px, 4vw, 24px);
+    }
+}
+
+
+

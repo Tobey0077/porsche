@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.message-box {
+  text-align: center;
+  color: #FFF;
+}
+
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+
+.message-box p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.buttons-con .action-link-wrap {
+  margin-top: 20px;
+}
+
+.buttons-con .action-link-wrap a {
+  background: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.buttons-con .action-link-wrap a:hover {
+  background: #81FF6D;
+}
+
+/* Animácie polígonov */
+#Polygon-1, #Polygon-2, #Polygon-3, #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 { animation-delay: 0.2s; }
+#Polygon-3 { animation-delay: 0.4s; }
+#Polygon-4 { animation-delay: 0.6s; }
+#Polygon-5 { animation-delay: 0.8s; }
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* RESPONSÍVNE */
+@media (max-width: 600px) {
+  svg {
+    width: 90%;
+  }
+
+  .message-box h1 {
+    font-size: 48px;
+  }
+
+  .message-box p {
+    font-size: 18px;
+  }
+
+  .buttons-con .action-link-wrap a {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
